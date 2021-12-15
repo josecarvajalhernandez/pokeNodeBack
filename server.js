@@ -13,6 +13,6 @@ app.use(express.urlencoded({extended : false}));
 router(app);
 
 app.use('/app', express.static('public'));
-
-app.listen(3001);
-console.log('App está escuchando en http://localhost:3001');
+const PORT = process.env.PORT || 3001  
+app.listen(PORT);
+console.log('App está escuchando en http://localhost:'+PORT);
