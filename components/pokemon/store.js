@@ -5,7 +5,7 @@ const listPokemons = async () => {
     const pokemons = [];
 
     const res = await axios.get(
-        "https://pokeapi.co/api/v2/pokemon/?limit=9&offset=0"
+        "https://pokeapi.co/api/v2/pokemon/?limit=1000&offset=0"
     );
     const { data } = res;
 
