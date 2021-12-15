@@ -31,12 +31,12 @@ const listPokemons = async () => {
     return pokemons;
 };
 
-function build_evo_list(data, evo_list){
+const build_evo_list = (data, evo_list) => {
     evo_list.push(data.species.name)
-    if(data.evolves_to.length == 0){
-        return
-    }
-    build_evo_list(data.evolves_to[0], evo_list)   
+  
+    if (data.evolves_to.length === 0) return
+  
+    build_evo_list(data.evolves_to[0], evo_list)
 }
 
 const pokeDetails = async (name) => {
