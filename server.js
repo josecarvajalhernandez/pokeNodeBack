@@ -3,7 +3,7 @@ const cors = require('cors');
 const db = require('./db');
 const router = require('./network/routes');
 
-db('mongodb+srv://admin:V4sA7FKx8ZypMvW@cluster0.cw2bx.mongodb.net/chat_db?retryWrites=true&w=majority');
+//db('mongodb+srv://admin:V4sA7FKx8ZypMvW@cluster0.cw2bx.mongodb.net/chat_db?retryWrites=true&w=majority');
 
 var app = express();
 app.use(cors());
