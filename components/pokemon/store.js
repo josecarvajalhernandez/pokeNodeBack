@@ -1,4 +1,3 @@
-const Model = require("./model");
 const axios = require("axios");
 
 const listPokemons = async () => {
@@ -27,7 +26,7 @@ const listPokemons = async () => {
             image: data.sprites.back_default,
         });
     }
-    //console.log(pokemons)
+
     return pokemons;
 };
 

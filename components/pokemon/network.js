@@ -15,8 +15,8 @@ router.get('/:name', function(req, res){
 
 router.get('/', function(req, res){
     controller.listPokemons()
-        .then(users =>{
-            response.success(req, res, users, 200) 
+        .then(pokemons =>{
+            response.success(req, res, pokemons, 200) 
         })
         .catch(e=>{
             response.error(req, res,'Unexpected Error', 500, e);
