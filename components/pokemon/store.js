@@ -23,10 +23,10 @@ const listPokemons = async () => {
             weight: data.weight,
             types: types,
             abilities: abilities,
-            image: data.sprites.back_default,
+            image: data.sprites.front_default,
         });
     }
-
+    //console.log(pokemons)
     return pokemons;
 };
 
@@ -67,7 +67,7 @@ const pokeDetails = async (name) => {
     pokemon.push({
         name: data.name,
         weight: data.weight,
-        image: data.sprites.back_default,
+        image: data.sprites.front_default,
         abilities:abilities,
         types:types,
         evolution_chain:evo_list
