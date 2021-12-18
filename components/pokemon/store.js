@@ -24,6 +24,7 @@ const listPokemons = async () => {
             types: types,
             abilities: abilities,
             image: data.sprites.front_default,
+            _id:data.id
         });
     }
     //console.log(pokemons)
